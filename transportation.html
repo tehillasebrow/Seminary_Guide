@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation & Budget</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="pics/Beth_Jacob_Jerusalem_seminary.jpg" alt="Seminary Logo" height="50">
+            Seminary in Israel
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="transportation.html">Transportation</a></li>
+                <li class="nav-item"><a class="nav-link" href="tracker.html">Expense Tracker</a></li>
+
+            </ul>
+        </div>
+        <div id="overlay" class="overlay"></div>
+    </nav>
+</header>
+<main>
+    <h1>Transportation and Budget Guide</h1>
+    <p>Learn how to navigate Israeli public transportation and calculate your bus fares.</p>
+
+    <!-- Currency Conversion Form -->
+    <section>
+        <h2>Currency Converter</h2>
+        <form id="currency-form">
+            <label for="usd-amount">Amount in USD:</label>
+            <input type="number" id="usd-amount" class="form-control" placeholder="Enter amount in USD">
+            <button type="button" class="btn btn-primary mt-2" onclick="convertCurrency()">Convert to ILS</button>
+            <p id="conversion-result" class="mt-3"></p>
+        </form>
+    </section>
+
+    <!-- Bus Fare Table -->
+    <section>
+        <h2>Bus Fare Chart</h2>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Route</th>
+                <th>Fare (ILS)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tel Aviv to Jerusalem</td>
+                <td>16.00</td>
+            </tr>
+            <tr>
+                <td>Jerusalem to Haifa</td>
+                <td>28.50</td>
+            </tr>
+            <tr>
+                <td>Eilat to Tel Aviv</td>
+                <td>65.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <div id="footer" class="footer"></div>
+    <script src="js/script.js"></script>
+</footer>
+</body>
+</html>

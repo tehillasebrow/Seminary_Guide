@@ -1,0 +1,48 @@
+/* Lavender background for the home page */
+body {
+    background-color: #d7d7ff;
+    font-family: "Roboto Thin", sans-serif;
+    color: navy;
+
+}
+
+/* Header Image */
+header img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    display: flex;
+}
+/* Header Text */
+    header {
+        font-size: 3em;
+    }
+/* Navigation bar */
+
+.nav-item:hover {
+    color: #d63384;
+}
+/* Main content styling */
+main {
+    padding: 20px;
+    text-align: center;
+        color: navy;
+    background-color: #d7d7ff;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: navy;
+    background-color: #d7d7ff;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+footer {
+    background-color: navy;
+    color: white;
+}
