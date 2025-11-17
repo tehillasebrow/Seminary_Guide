@@ -28,12 +28,30 @@
     <h1>Track Your Expenses</h1>
     <p>Keep a record of your expenses while studying in Israel.</p>
 
-    <!-- Expense Tracker Form -->
+    <section>
+        <div class="form-inline justify-content-center mb-3">
+            <label class="mr-2 font-weight-bold">Monthly Budget (ILS):</label>
+            <input type="number" id="budget-limit" class="form-control mr-2" placeholder="Set limit (e.g. 2000)">
+            <button class="btn btn-info" onclick="setBudget()">Set Budget</button>
+        </div>
+        <p id="budget-status" class="text-center font-weight-bold"></p>
+    </section>
+
     <section>
         <form id="expense-form">
             <div class="form-group">
                 <label for="item-name">Item Name:</label>
                 <input type="text" id="item-name" class="form-control" placeholder="Enter item name">
+            </div>
+            <div class="form-group">
+                <label for="item-category">Category:</label>
+                <select id="item-category" class="form-control">
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Simcha/Gifts">Simcha/Gifts</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="item-cost-ils">Cost (ILS):</label>
@@ -47,13 +65,13 @@
         </form>
     </section>
 
-    <!-- Expenses Table -->
     <section>
         <h2>Your Expenses</h2>
         <table class="table table-striped" id="expenses-table">
             <thead>
             <tr>
                 <th>Item Name</th>
+                <th>Category</th>
                 <th>Cost (ILS)</th>
                 <th>Cost (USD)</th>
                 <th>Action</th>
