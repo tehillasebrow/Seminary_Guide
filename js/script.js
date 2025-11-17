@@ -42,9 +42,14 @@ function addExpense() {
 
 function updateExpensesTable() {
     const tableBody = document.querySelector("#expenses-table tbody");
-    tableBody.innerHTML = "";
+    
+    
+    if (!tableBody) return; 
 
+    tableBody.innerHTML = "";
+    
     let totalIls = 0, totalUsd = 0;
+    
     
     expenses.forEach((expense, index) => {
         totalIls += expense.costIls;
@@ -64,7 +69,7 @@ function updateExpensesTable() {
     document.getElementById("total-expenses").textContent = `Total: ${totalIls.toFixed(2)} ILS (${totalUsd.toFixed(2)} USD)`;
 }
 
-// 5. New function to handle deleting items
+
 function deleteExpense(index) {
     expenses.splice(index, 1); // Remove item at specific index
     localStorage.setItem('semExpenses', JSON.stringify(expenses)); // Update storage
