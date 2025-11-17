@@ -105,22 +105,6 @@ function deleteExpense(index) {
     updateExpensesTable();
 }
 
-function addButton() {
-    const button = document.createElement('button1');
-    button.textContent = "Show Info";
-
-    button.addEventListener('click', () => {
-        const overlay = document.getElementById('overlay');
-        if (overlay) {
-            overlay.textContent = "Names: Tehilla Sebrow, Aviva Robinson, Rikki Mann. Semester: Fall 2024";
-            overlay.style.display = "flex";
-            setTimeout(() => { overlay.style.display = "none"; }, 3000);
-        }
-    });
-
-    document.body.appendChild(button);
-}
-
 function calculateDateDifference(lastModified) {
     const currentDate = new Date();
     const modifiedDate = new Date(lastModified);
@@ -140,7 +124,6 @@ function displayLastModified() {
 }
 
 window.onload = function () {
-    addButton();
     displayLastModified();
     updateExpensesTable();
 };
