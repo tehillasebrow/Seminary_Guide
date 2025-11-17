@@ -1,33 +1,36 @@
 Seminary in Israel Guide
+I built this web app to make day-to-day seminary life in Israel less stressful. It pulls together all the tools I kept needing—budgeting, tracking expenses, bus info, and currency conversions—so everything is in one spot and easy to use.
 
-I built this web app to make day-to-day seminary life in Israel less stressful. It pulls together all the things I kept needing—budgeting, tracking expenses, bus info, currency conversions—so everything is in one spot and easy to use.
+📱 Features
+Smart Expense Tracker:
 
-Features
+Budget Management: Set a monthly budget limit. The app visually warns you (turning red) if your spending exceeds your budget.
 
-Expense Tracker: Add and delete expenses quickly.
+Categorization: Organize expenses by type (Food, Transportation, Shopping, etc.) to better understand your spending habits.
 
-Saved Data: Everything is stored with Local Storage, so your info stays even after closing the browser.
+Persistent Data: Everything is stored using Local Storage, so your budget and expense list remain saved even after you close the browser.
 
-Instant Updates: The table and totals update right away without refreshing.
+Live Currency Converter:
 
-Currency Converter: Simple USD  ILS conversions so you can estimate costs fast.
+Fetches real-time USD to ILS exchange rates using a live API.
 
-Transportation Guide: Clear charts with common bus routes and fares.
+Includes an offline fallback mode that uses estimated rates if no internet connection is available.
 
-Info & Tips: Useful things for students spending the year abroad.
+Transportation Guide: Quick reference charts for common inter-city bus routes and fares.
 
-Technologies Used
+Info & Tips: A curated collection of useful resources for students spending the year abroad.
 
-HTML5: Structure and multi-page setup.
+🛠️ Technologies Used
+HTML5: Semantic structure and multi-page setup.
 
-CSS3 & Bootstrap: Clean, responsive layout for both mobile and desktop.
+CSS3 & Bootstrap: Clean, responsive layout that works perfectly on both mobile phones and laptops.
 
-JavaScript (ES6):
+JavaScript (ES6+):
 
-DOM manipulation for building and updating the expense table.
+Fetch API & Async/Await: To retrieve live currency data from external APIs.
 
-Local Storage for saving, reading, and deleting data.
+DOM Manipulation: For dynamically building the expense table and updating budget status colors (Green/Red) in real-time.
 
-Event handling for forms and buttons.
+Local Storage: Implemented CRUD (Create, Read, Delete) operations to persist user data.
 
-Defensive checks so the script doesn’t break on pages missing certain elements.
+Defensive Programming: Includes safety checks to ensure scripts run smoothly across different pages without errors.
