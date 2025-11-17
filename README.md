@@ -1,36 +1,19 @@
-Seminary in Israel Guide
-I built this web app to make day-to-day seminary life in Israel less stressful. It pulls together all the tools I kept needing—budgeting, tracking expenses, bus info, and currency conversions—so everything is in one spot and easy to use.
+# Seminary in Israel Guide 🇮🇱
 
-📱 Features
-Smart Expense Tracker:
+I built this web app to make day-to-day life in Israel less stressful for students. It pulls together the tools I found myself needing constantly—budgeting, expense tracking, and currency conversion—into one offline-capable interface.
 
-Budget Management: Set a monthly budget limit. The app visually warns you (turning red) if your spending exceeds your budget.
+## 🌟 Key Features
+* **Smart Expense Tracker:**
+    * **Budget Warnings:** You can set a monthly limit (e.g., 2000 ILS). If your expenses cross that line, the UI visually warns you by turning red.
+    * **Categories:** Expenses can be tagged (Food, Travel, Shopping) to keep things organized.
+    * **It Remembers You:** I used **Local Storage** so your budget and expense list stay saved in your browser, even if you close the tab or restart your phone.
+* **Live Currency Converter:** Fetches real-time USD/ILS rates using a live API, with a fallback mode for when you don't have data.
+* **Travel Info:** Quick reference charts for common bus routes.
 
-Categorization: Organize expenses by type (Food, Transportation, Shopping, etc.) to better understand your spending habits.
+## 💻 Tech Stack
+* **Frontend:** HTML5, CSS3, Bootstrap (it's fully responsive for mobile).
+* **JavaScript:** * `async/await` for fetching API data.
+    * DOM manipulation for the dynamic tables.
+    * Defensive programming to ensure the code runs smoothly on every page.
 
-Persistent Data: Everything is stored using Local Storage, so your budget and expense list remain saved even after you close the browser.
-
-Live Currency Converter:
-
-Fetches real-time USD to ILS exchange rates using a live API.
-
-Includes an offline fallback mode that uses estimated rates if no internet connection is available.
-
-Transportation Guide: Quick reference charts for common inter-city bus routes and fares.
-
-Info & Tips: A curated collection of useful resources for students spending the year abroad.
-
-🛠️ Technologies Used
-HTML5: Semantic structure and multi-page setup.
-
-CSS3 & Bootstrap: Clean, responsive layout that works perfectly on both mobile phones and laptops.
-
-JavaScript (ES6+):
-
-Fetch API & Async/Await: To retrieve live currency data from external APIs.
-
-DOM Manipulation: For dynamically building the expense table and updating budget status colors (Green/Red) in real-time.
-
-Local Storage: Implemented CRUD (Create, Read, Delete) operations to persist user data.
-
-Defensive Programming: Includes safety checks to ensure scripts run smoothly across different pages without errors.
+## 📸 Screenshots
