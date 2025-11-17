@@ -17,3 +17,9 @@ I built this web app to make day-to-day life in Israel less stressful for studen
     * Defensive programming to ensure the code runs smoothly on every page.
 
 ## 📸 Screenshots
+<img width="1112" height="852" alt="Screenshot 2025-11-17 181810" src="https://github.com/user-attachments/assets/48d4db14-1b5f-42e7-ab03-8798e6c9dd72" />
+<img width="1631" height="843" alt="Screenshot 2025-11-17 181747" src="https://github.com/user-attachments/assets/8687a0aa-d86e-4f1a-af64-6cdb4954c504" />
+<img width="1724" height="870" alt="Screenshot 2025-11-17 181700" src="https://github.com/user-attachments/assets/560f800a-6e5b-4710-b43d-aa528b2f6def" />
+<img width="1713" height="309" alt="Screenshot 2025-11-17 181717" src="https://github.com/user-attachments/assets/12d38ce9-01f4-4aed-9beb-e448a3160391" />
+
+
